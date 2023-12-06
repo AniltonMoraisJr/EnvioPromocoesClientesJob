@@ -18,6 +18,8 @@ public class ProcessarEmailProdutoClienteProcessor implements ItemProcessor<Inte
         email.setTo(interesseProdutoCliente.getCliente().getEmail());
         email.setSubject("Promoção Imperdível!!!");
         email.setText(gerarTextoPromocao(interesseProdutoCliente));
+
+        Thread.sleep(2000);
         return email;
     }
 
@@ -28,7 +30,7 @@ public class ProcessarEmailProdutoClienteProcessor implements ItemProcessor<Inte
                         interesseProdutoCliente.getProduto().getDescricao()) +
                 String.format("Por apenas: %s!",
                         NumberFormat
-                                .getCurrencyInstance(Locale.of("pt_BR"))
+                                .getCurrencyInstance(Locale.of("pt", "BR"))
                                 .format(interesseProdutoCliente.getProduto().getPreco()));
 
         return writer;
