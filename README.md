@@ -17,7 +17,7 @@ This Spring Boot project demonstrates the integration of Spring Batch and Quartz
 
 Copy code
 ```bash
-git clone https://github.com/your-username/spring-batch-quartz-email.git
+git clone https://github.com/AniltonMoraisJr/EnvioPromocoesClientesJob.git
 ```
 Open the project in your preferred IDE.
 
