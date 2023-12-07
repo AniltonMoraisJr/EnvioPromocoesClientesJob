@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.MailSender;
 
 @Configuration
-public class enviarEmailProdutoClienteWriterConfig {
+public class EnviarEmailProdutoClienteWriterConfig {
     @Bean
     public SimpleMailMessageItemWriter enviarEmailProdutoClienteWriter(MailSender mailSender){
         return new SimpleMailMessageItemWriterBuilder()
